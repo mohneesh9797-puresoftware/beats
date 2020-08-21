@@ -342,7 +342,7 @@ jobs:
         - MAGE='build test'
       go: $TRAVIS_GO_VERSION
       stage: test
-	  arch: arm64
+      arch: arm64
     - os: linux
       arch: arm64
       before_install: .ci/scripts/travis_has_changes.sh x-pack/filebeat filebeat libbeat || travis_terminate 0
